@@ -15,14 +15,9 @@ const PostList = (token) => {
         }
       },[]);
 
-    return (posts.map ((post, idx) => (
-       (
-      <div>
-        <h2>{post.title}</h2>
-        <p></p>
-      </div>
-      )
-    )));
+      return <>
+      <h2>Posts</h2>
+      </>
 
 }
 
