@@ -11,8 +11,7 @@ const AccountForm = ({type, setToken, setUser}) => {
 
   const handleSubmit = async (ev) => {
     ev.preventDefault();
-    console.log('username: ', username);
-    console.log('password: ', password);
+    
     const response = await fetch(`https://strangers-things.herokuapp.com/api/2010-CPU-RM-WEB-PT/users/${type}`, { // or use the `/users/login` route for login!
       method: 'POST',
       headers: {
@@ -25,11 +24,11 @@ const AccountForm = ({type, setToken, setUser}) => {
         }
       })
     });
-    console.log('response: ', response);
+    
     const {data} = await response.json();
-    console.log('{data}: ', {data});
+    
     const token = data?.token;
-    console.log('token: ', token);
+    
     if (token) {
       setToken(token);
       const response = await fetch(`https://strangers-things.herokuapp.com/api/2010-CPU-RM-WEB-PT/users/me`, {
@@ -39,7 +38,7 @@ const AccountForm = ({type, setToken, setUser}) => {
         },
       });
       const {data} = await response.json();
-      console.log('data: ', data);
+      
       setUser(data);
     }
     setUsername('');
