@@ -4,7 +4,7 @@ const Post = (prop) => {
         <h3>{post.title}</h3>
         <p>{post.description}</p>
         <p>{post.price}</p>
-        <p>{post.author.username}</p>
+        <p>User: {post.author.username}</p>
     </div>
 }
 export default Post

@@ -32,7 +32,11 @@ import {
       <h1>
         Strangers Things
       </h1>
-      {user.username && <div>Hello {user.username}</div> }
+      {user.username && <div>Hello {user.username}<button onClick={() => {
+        setUser({})
+        setToken('')
+        localStorage.removeItem('token')
+      }}>Logout</button></div> }
       <Route path="/login">
         <AccountForm type={'login'} setToken={setToken} setUser={setUser}/>
       </Route>
