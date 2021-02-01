@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Post from './Post'
 
-
-const PostList = (token) => {
+const PostList = ({token}) => {
     const [posts, setPosts] = useState([]);
     useEffect (async () => {
         
@@ -10,14 +10,18 @@ const PostList = (token) => {
         
         const {data} = await response.json();
         console.log (data.posts)
-        if (data.success) {
-            setPosts(data.posts)
-        }
+        setPosts (data.posts)
       },[]);
-
-      return <>
+      return <div className='postList'>
       <h2>Posts</h2>
-      </>
+
+      {
+          posts.map ((post, idx) => {
+              return <Post post={post} key={idx}/>
+          })
+      }
+
+      </div>
 
 }
 
