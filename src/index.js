@@ -37,6 +37,8 @@ import {
         setToken('')
         localStorage.removeItem('token')
       }}>Logout</button></div> }
+      <Link to='/login'>Login</Link>
+      <Link to='/posts'>Posts</Link>
       <Route path="/login">
         <AccountForm type={'login'} setToken={setToken} setUser={setUser}/>
       </Route>
