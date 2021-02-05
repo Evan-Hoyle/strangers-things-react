@@ -40,7 +40,7 @@ const AddPost = (props) => {
         <input type='text' value={price} placeholder='Price' onChange={(ev)=>{
             setPrice(ev.target.value)
         }}></input>
-        <button>Submit Post</button>
+        <button className='submitButton'>Submit Post</button>
     </form>
 }
 

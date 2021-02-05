@@ -27,7 +27,7 @@ const SendMessage = (props) => {
         <input type='text' value={message} onChange={(ev) => {
             setMessage(ev.target.value)
         }}></input>
-        <button>Send Message</button>
+        <button className='sendButton'>Send Message</button>
     </form>
 
 }

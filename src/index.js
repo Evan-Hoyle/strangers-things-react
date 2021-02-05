@@ -33,7 +33,7 @@ import {
       <h1>
         Strangers Things
       </h1>
-      {user.username && <div>Hello {user.username}<button className='logout' onClick={() => {
+      {user.username && <div className='hello'>Hello {user.username}<button className='logout' onClick={() => {
         setUser({})
         setToken('')
         localStorage.removeItem('token')

@@ -1,9 +1,11 @@
 #app {
-    background-color:aqua; 
+    background-color: #222222;
+    padding: 1rem;
 }
 
 .post {
-    background-color: aquamarine;
+    background-color: #222222;
+    color: royalblue;
 }
 
 .link {
@@ -17,4 +19,57 @@
     background-color: transparent;
     outline: none;
     float: right;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.sendButton {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.submitButton {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    padding: 1rem;
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    padding: 1rem;
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    padding: 2rem;
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h5 {
+    padding: 2rem;
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hello {
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
