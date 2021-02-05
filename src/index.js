@@ -7,6 +7,7 @@ import './bootstrap.css';
 import {
     AccountForm,
     PostList,
+    Profile
   } from './components';
   
   const App = () => {
@@ -32,13 +33,16 @@ import {
       <h1>
         Strangers Things
       </h1>
-      {user.username && <div>Hello {user.username}<button onClick={() => {
+      {user.username && <div>Hello {user.username}<button className='logout' onClick={() => {
         setUser({})
         setToken('')
         localStorage.removeItem('token')
       }}>Logout</button></div> }
+      <div className='link'>
       <Link to='/login'>Login</Link>
       <Link to='/posts'>Posts</Link>
+      {token ? <Link to='/profile'>Profile</Link> : ''}
+      </div>
       <Route path="/login">
         <AccountForm type={'login'} setToken={setToken} setUser={setUser}/>
       </Route>
@@ -49,6 +53,7 @@ import {
         <PostList token={token}/>
       </Route>
       <Route path='/profile'>
+        <Profile user={user}/>
       </Route>
     </>
   }

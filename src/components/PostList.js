@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react';
 import Post from './Post'
 import AddPosts from './AddPosts'
 import DeletePost from './DeletePosts'
+import SendMessage from './SendMessage';
 
 const PostList = ({token}) => {
 
@@ -30,6 +31,7 @@ const PostList = ({token}) => {
               return <Fragment key={post._id}>
                 <Post post={post}/>
                 {post.isAuthor ? <DeletePost id={post._id} token={token} fetchPosts={fetchPosts}/> : ''}
+                {!post.isAuthor && token ? <SendMessage id={post._id} token={token}/> : ''}
               </Fragment>
           })
       }
