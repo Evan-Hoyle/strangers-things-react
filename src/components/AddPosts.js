@@ -30,7 +30,8 @@ const AddPost = (props) => {
         setPrice('')
     }
 
-    return <form onSubmit={handleSubmit}>
+    return <div className='formAlign'>
+    <form className='form' onSubmit={handleSubmit}>
         <input type='text' value={title} placeholder='Title' onChange={(ev)=>{
             setTitle(ev.target.value)
         }}></input>
@@ -40,8 +41,9 @@ const AddPost = (props) => {
         <input type='text' value={price} placeholder='Price' onChange={(ev)=>{
             setPrice(ev.target.value)
         }}></input>
-        <button className='submitButton'>Submit Post</button>
+        <button className='submitButton btn btn-dark btn-sm'>Submit Post</button>
     </form>
+    </div>
 }
 
 export default AddPost

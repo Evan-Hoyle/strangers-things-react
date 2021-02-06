@@ -28,10 +28,11 @@ const PostList = ({token}) => {
 
       {
           posts.map ((post) => {
-              return <Fragment key={post._id}>
+              return <Fragment key={post._id}> <div className='postWrap'>
                 <Post post={post}/>
                 {post.isAuthor ? <DeletePost id={post._id} token={token} fetchPosts={fetchPosts}/> : ''}
                 {!post.isAuthor && token ? <SendMessage id={post._id} token={token}/> : ''}
+                </div>
               </Fragment>
           })
       }

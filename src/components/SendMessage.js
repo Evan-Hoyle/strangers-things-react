@@ -24,10 +24,10 @@ const SendMessage = (props) => {
     }
 
     return <form onSubmit={handleSubmit}>
+        <button className='sendButton btn btn-dark btn-sm'>Send Message</button>
         <input type='text' value={message} onChange={(ev) => {
             setMessage(ev.target.value)
         }}></input>
-        <button className='sendButton'>Send Message</button>
     </form>
 
 }

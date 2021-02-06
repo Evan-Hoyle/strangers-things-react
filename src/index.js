@@ -38,10 +38,22 @@ import {
         setToken('')
         localStorage.removeItem('token')
       }}>Logout</button></div> }
-      <div className='link'>
-      <Link to='/login'>Login</Link>
-      <Link to='/posts'>Posts</Link>
-      {token ? <Link to='/profile'>Profile</Link> : ''}
+      <div>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div id="navbarNav">
+            <ul className="navbar-nav">
+            {!token ? <li className="nav-item active">
+            <Link className='nav-link' to='/login'>Login</Link>
+            </li> : ''}
+            <li className="nav-item">
+            <Link className='nav-link' to='/posts'>Posts</Link>
+            </li>
+            {token ? <li className="nav-item">
+            <Link className='nav-link' to='/profile'>Profile</Link>
+            </li> : ''}
+            </ul>
+        </div>
+    </nav>
       </div>
       <Route path="/login">
         <AccountForm type={'login'} setToken={setToken} setUser={setUser}/>

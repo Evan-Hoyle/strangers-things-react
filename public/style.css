@@ -1,11 +1,36 @@
 #app {
     background-color: #222222;
     padding: 1rem;
+    border: 10px solid lime;
+    text-align: center;
 }
 
 .post {
     background-color: #222222;
     color: royalblue;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 1rem;
+    height: 300px;
+    margin-bottom: .5rem;
+}
+
+.postWrap {
+    display: inline-block;
+    width: 500px;
+    margin: 2rem;
+}
+
+.message {
+    background-color: #222222;
+    color: royalblue;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 1rem;
+    height: 250px;
+    display: inline-block;
+    width: 500px;
+    margin: 2rem;
 }
 
 .link {
@@ -20,23 +45,22 @@
     outline: none;
     float: right;
     font-style: italic;
-    color: whitesmoke;
+    color: lime;
 }
 
-.sendButton {
-    border: none;
-    background-color: transparent;
-    outline: none;
-    color: whitesmoke;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+form {
+    padding: .2rem;
+    border-radius: 5px;
+    vertical-align: center;
 }
 
-.submitButton {
-    border: none;
-    background-color: transparent;
-    outline: none;
-    color: whitesmoke;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.form {
+    display: inline;
+    padding: 1rem;
+}
+
+.formAlign {
+    text-align: center;
 }
 
 h1 {
@@ -70,6 +94,11 @@ h5 {
 }
 
 .hello {
+    color: royalblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
     color: royalblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
