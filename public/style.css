@@ -1,14 +1,14 @@
 #app {
     background-color: #222222;
     padding: 1rem;
-    border: 10px solid lime;
+    border: 10px solid #262626;
     text-align: center;
 }
 
 .post {
     background-color: #222222;
-    color: royalblue;
-    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    border: 2px solid #6441a5;
     border-radius: 5px;
     padding: 1rem;
     height: 300px;
@@ -23,8 +23,8 @@
 
 .message {
     background-color: #222222;
-    color: royalblue;
-    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    border: 2px solid #6441a5;
     border-radius: 5px;
     padding: 1rem;
     height: 250px;
@@ -48,6 +48,11 @@
     color: lime;
 }
 
+.hello {
+    color: lime;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 form {
     padding: .2rem;
     border-radius: 5px;
@@ -65,40 +70,35 @@ form {
 
 h1 {
     text-align: center;
-    color: royalblue;
+    color: #6441a5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2 {
     padding: 1rem;
-    color: royalblue;
+    color: #6441a5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h3 {
     padding: 1rem;
-    color: royalblue;
+    color: #6441a5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h4 {
     padding: 2rem;
-    color: royalblue;
+    color: lime;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h5 {
     padding: 2rem;
-    color: royalblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.hello {
-    color: royalblue;
+    color: #f1f1f1;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
-    color: royalblue;
+    color: #f1f1f1;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
